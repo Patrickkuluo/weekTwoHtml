@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Maratech Solutions - Registration</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS file for styling -->
+</head>
+
+<body>
+    <!-- Main header for the site -->
+    <header>
+        <h1>Welcome to Maratech Solutions</h1>
+        <p>Buy refurbished laptops with great deals and quality!</p>
+    </header>
+
+    <!-- Section with an ordered list and external image -->
+    <section>
+        <h2>Our Product Categories</h2>
+        <ol>
+            <li>Laptops</li>
+            <li>Monitors</li>
+            <li>Accessories</li>
+            <li>Smartphones</li>
+            <li>Networking Equipment</li>
+        </ol>
+        <img src="https://images.pexels.com/photos/1048276/pexels-photo-1048276.jpeg" alt="Refurbished Laptops"
+            width="600">
+    </section>
+
+    <!-- Table for displaying contacts -->
+    <section>
+        <h2>Our Contact Information</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Patrick Kuluo</td>
+                    <td>Gaborone Plaza, Nairobi, Kenya</td>
+                    <td>+254 112 442 025</td>
+                    <td>patrick@maratech.com</td>
+                </tr>
+                <tr>
+                    <td>Frank Ochieng</td>
+                    <td>Luthuli Street, Nairobi, Kenya</td>
+                    <td>+254 700 123 456</td>
+                    <td>frank@maratech.com</td>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>Kenya</td>
+                    <td>+254 712 345 678</td>
+                    <td>johndoe@maratech.com</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>Ngong Road, Nairobi, Kenya</td>
+                    <td>+254 799 234 567</td>
+                    <td>janesmith@maratech.com</td>
+                </tr>
+                <tr>
+                    <td>Lucy Wangari</td>
+                    <td>Kilimani, Nairobi, Kenya</td>
+                    <td>+254 700 890 123</td>
+                    <td>lucy@maratech.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Registration form -->
+    <section>
+        <h2>Register with Us</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Create a password" required><br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label for="product-interest">Product Interest:</label>
+            <select id="product-interest" name="product-interest">
+                <option value="laptops">Laptops</option>
+                <option value="monitors">Monitors</option>
+                <option value="accessories">Accessories</option>
+            </select><br><br>
+
+            <fieldset>
+                <legend>Preferred Contact Method:</legend>
+                <label for="email-contact">
+                    <input type="radio" id="email-contact" name="contact" value="email" checked>Email
+                </label><br>
+                <label for="phone-contact">
+                    <input type="radio" id="phone-contact" name="contact" value="phone">Phone
+                </label><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Notifications:</legend>
+                <label for="updates">
+                    <input type="checkbox" id="updates" name="updates" checked>Receive updates on new products
+                </label><br>
+                <label for="offers">
+                    <input type="checkbox" id="offers" name="offers">Receive promotional offers
+                </label><br><br>
+            </fieldset>
+
+            <input type="submit" value="Register">
+        </form>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2025 Maratech Solutions. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
